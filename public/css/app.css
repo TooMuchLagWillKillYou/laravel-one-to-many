@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .container {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+body .container header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body .container .employee {
+  padding: 2em 1.5em;
+  border-radius: 5px;
+  background-color: rgba(211, 211, 211, 0.15);
+  overflow: hidden;
+}
+
+body .container .employee:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+body .container .employee h2 {
+  margin-bottom: 0.5em;
+  color: turquoise;
+}
+
+body .container .employee .tasks {
+  width: calc(100% / 3);
+  float: left;
+}
+
+body .container .employee .tasks:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+body .container .employee .tasks::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .container .employee .tasks .title {
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+body .container .employee .tasks .description {
+  color: grey;
+}
+

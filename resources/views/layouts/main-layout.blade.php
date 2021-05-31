@@ -15,7 +15,7 @@
         
         @yield('content')
         
-        @include('components.footer')
+        {{-- @include('components.footer') --}}
     </div>
 
 </body>

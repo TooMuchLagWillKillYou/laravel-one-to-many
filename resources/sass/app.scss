@@ -1,1 +1,73 @@
-//
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .container {
+
+        padding-left: 15%;
+        padding-right: 15%;
+
+        header {
+
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .employee {
+
+            padding: 2em 1.5em;
+            border-radius: 5px;
+            background-color: rgba($color: lightgrey, $alpha: .15);
+            overflow: hidden;
+
+            &:not(:last-child) {
+
+                margin-bottom: 1.5em;
+            }
+
+            h2 {
+                
+                margin-bottom: .5em;
+                color: turquoise;
+            }
+
+            .tasks {
+
+                width: calc(100% / 3);
+                float: left;
+
+                &:not(:last-child) {
+
+                    margin-bottom: .5em;
+                }
+
+                &::after {
+
+                    content: '';
+                    display: table;
+                    clear: both;
+                }
+
+                .title {
+    
+                    font-weight: 600;
+                    margin-bottom: .2em;
+                }
+
+                .description {
+
+                    color: grey;
+                }
+            }
+
+        }
+    }
+}
