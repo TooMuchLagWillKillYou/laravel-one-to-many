@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Task;
 
 class Employee extends Model
 {
@@ -12,4 +13,9 @@ class Employee extends Model
         'lastname',
         'ral'
     ];
+
+    public function tasks(){
+
+        return $this->hasMany(Task::class);
+    }
 }
